@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Агентство недвижимости "Анисия"</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+</head>
+<body>
+    <header class="header">
+        <div class="top-block container-fluid">
+            <div class="container">
+                <span class="top-block_link_icon"></span>
+                 <a class="top-block_link" href="addata.html">Добавить объявление</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo-block">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/4.png" alt="logo">
+                    </a>
+                    <div class="logo-title">
+                        <span class="name">Анисия</span>
+                        <span>агентство недвижимости</span>
+                    </div>
+                </div>
+                <div class="header-title"><h1>Купить квартиру в Елабуге</h1></div>
+                <div class="phone-number">
+                    <span>г. Елабуга</span>
+                    <span>тел: 8-917-243-12-71</span>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="wrapper">
+    <div class="container">
+        
+            <form action="handler.php" class="search-form" method="post">
+                <div class="row1 row">
+
+                    <div class="select-wrapper col-sm-2">
+                        <select name="property" id="property">
+                            <option>Недвижимость</option>
+                            <option value = "Квартиры">Квартиры</option>
+                            <option value = "Комнаты">Комнаты</option>
+                            <option value = "Дома">Дома</option>
+                            <option value = "Земельные участки">Земельные участки</option>       
+                        </select>
+                    </div> 
+
+                    <div class="select-wrapper  col-sm-7 custom-col-sm-7">   
+                        <input type="search" class="search" name="search" placeholder="Поиск по объявлениям">
+                    </div> 
+
+                    <div class="select-wrapper col-sm-2">
+                        <select name="city" id="city">
+                            <option value="1">Елабуга</option>
+                            <option value="2">Набережные Челны</option>
+                        </select>
+                    </div> 
+                    
+                    <div class="search-form_submit select-wrapper col-sm-1">
+                        <input type="submit" class="submit" value="Найти">
+                    </div>
+                </div>
+
+                    <div class="search-filters-wrapper">
+                        <div class="search-filters-main">
+                           <div class="row2 row"> 
+                               <div class="search-filters-main-filter-control col-sm-3">
+                                   <select class ="select-select">
+                                       <option>Продам</option>
+                                       <option>Сдам</option>
+                                   </select>
+                               </div>
+
+                                <div class="search-filters-main-filter-control col-sm-3">
+                                    <select name="number-rooms" id="number-rooms">
+                                        <option>Количество комнат</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">больше 5</option>
+                                    </select>
+                                </div>
+                                <div class="search-filters-main-filter-control col-sm-3">
+                                    <select name="type-object" id="type-object">
+                                        <option>Вид объекта</option>
+                                        <option value="">Вторичка</option>
+                                        <option value="">Новостройка</option>
+                                    </select>
+                                </div>
+                         <!--    <div class="search-filters-main-filter-control">
+                                  <p>
+                                      <label for="square_1">Общая площадь, кв.м:</label>
+                                      <input type="text" id="square_1" name = "square_1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                  </p>
+                                <div id="slider-range"></div>   
+                            </div> -->
+                                <div class="search-filters-main-filter-control col-sm-3">
+                                      <select name="floor" id="floor">
+                                        <option>Этаж</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                    </select>
+                                </div>
+                             </div>   
+                         <div class="row3 row">    
+                            <div class="search-filters-main-filter-control col-sm-3">
+                                <select name="floors_in-house" id="floors_in-house">
+                                    <option>Этажей в доме</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                </select>
+                            </div>
+                            <div class="search-filters-main-filter-control col-sm-3">
+                                <select name="type-of-house" id="type-of-house">
+                                    <option>Тип дома</option>
+                                    <option value="">Кирпичный</option>
+                                    <option value="">Панельный</option>
+                                    <option value="">Блочный</option>
+                                    <option value="">Монолитный</option>
+                                    <option value="">Деревянный</option>
+                                </select>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+               </form>
+         </div>
+    </div>
+    
+    <div class="catalog container">
+        <div class="item row">
+            <div class="photo col-md-3 col-xs-12">
+                <a class="photo-wrapper" href="#">
+                    <img src="images/2558539414.jpg">
+                </a>        
+            </div>
+            <div class="description col-md-5 col-xs-4">
+                <div class="item_header">
+                    <h3 class="item-description-title">
+                        <a class="item-daescription-title-link" href="#" title="1-к квартира, 36 кв.м, 5/9 эт. в Елабуге">
+                          1-к квартира, 36 кв.м, 5/9 эт.  
+                        </a>
+                    </h3> 
+                    Адрес: <span class="item-address">пр-т Нефтяников, 14 </span>     
+                </div>
+                <div class="item-content">
+                    <p>О доме: <span class="wall">кирпичный</span></p>
+                    <p>Описание: <span>Новая квартира с ремонтом в новом 
+                            доме, с новой мебелью, солнечная сторона, ...
+                                 </span>
+                    </p>
+                </div>
+            </div>
+            <div class="right-block col-md-4 col-xs-12 text-center">
+                <div class="item-price">
+                    <span class="item-price-content">1 230 000 руб.</span>
+                </div>
+                <div class="more"><span><a href="#">подробнее</a></span></div>
+            </div>
+        </div>
+        <hr>
+        <div class="item row">
+            <div class="photo col-md-3">
+                <a class="photo-wrapper" href="#">
+                    <img src="images/2558539414.jpg">
+                </a>        
+            </div>
+            <div class="description col-md-5">
+                <div class="item_header">
+                    <h3 class="item-description-title">
+                        <a class="item-daescription-title-link" href="#" title="1-к квартира, 36 кв.м, 5/9 эт. в Елабуге">
+                          1-к квартира, 36 кв.м, 5/9 эт.  
+                        </a>
+                    </h3> 
+                    Адрес: <span class="item-address">пр-т Нефтяников, 14 </span>     
+                </div>
+                <div class="item-content">
+                    <p>О доме: <span class="wall">кирпичный</span></p>
+                    <p>Описание: <span>Новая квартира с ремонтом в новом 
+                            доме, с новой мебелью, солнечная сторона, ...
+                                 </span>
+                    </p>
+                </div>
+            </div>
+            <div class="right-block col-md-4 text-center">
+                <div class="item-price">
+                    <span class="item-price-content">1 230 000 руб.</span>
+                </div>
+                <div class="more"><span><a href="#">подробнее</a></span></div>
+            </div>
+        </div>
+        <hr>
+        <div class="item row">
+            <div class="photo col-md-3">
+                <a class="photo-wrapper" href="#">
+                    <img src="images/2558539414.jpg">
+                </a>        
+            </div>
+            <div class="description col-md-5">
+                <div class="item_header">
+                    <h3 class="item-description-title">
+                        <a class="item-daescription-title-link" href="#" title="1-к квартира, 36 кв.м, 5/9 эт. в Елабуге">
+                          1-к квартира, 36 кв.м, 5/9 эт.  
+                        </a>
+                    </h3> 
+                    Адрес: <span class="item-address">пр-т Нефтяников, 14 </span>     
+                </div>
+                <div class="item-content">
+                    <p>О доме: <span class="wall">кирпичный</span></p>
+                    <p>Описание: <span>Новая квартира с ремонтом в новом 
+                            доме, с новой мебелью, солнечная сторона, ...
+                                 </span>
+                    </p>
+                </div>
+            </div>
+            <div class="right-block col-md-4 text-center">
+                <div class="item-price">
+                    <span class="item-price-content">1 230 000 руб.</span>
+                </div>
+                <div class="more"><span><a href="#">подробнее</a></span></div>
+            </div>
+        </div>
+        <hr>
+
+        <nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+</div> <!-- end catalog -->
+
+<footer class="footer container-fluid">
+    <div class="container">
+         <p class="copyright">Copyright &copy; 2017 Агентство недвижимости "Анисия". Все права защищены.</p>
+    </div>
+</footer>
+<div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="modal-content-title">ВХОД</h2>
+            <p>Введите, пожалуйста, свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="icon-user" type="text" name="login" placeholder="ЛОГИН" required>
+                <input class="icon-password" type="password" name="password" placeholder="ПАРОЛЬ" required>
+                <label class="login-checkbox">
+                     <input type="checkbox" name="remember" >
+                     <span class="checkbox-indicator"></span>
+                     ЗАПОМНИТЕ МЕНЯ
+                </label>
+                    <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+                     <button class="btn" type="submit">ВОЙТИ</button>
+            </form>
+</div>
+<div class="modal-overlay"></div>
+ <script>
+        var link = document.querySelector(".login");
+        var popup = document.querySelector(".modal-content");
+        var close = document.querySelector(".modal-content-close");
+        var login = popup.querySelector("[name = login]");
+        var overlay = document.querySelector(".modal-overlay");
+        var map = document.querySelector(".map-open");
+        var map_popup = document.querySelector(".modal-map");
+        var mapClose = document.querySelector(".modal-map-close");
+
+        link.addEventListener("click", function(event){
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+                overlay.classList.add("modal-overlay-show");
+                login.focus();
+        });
+        close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+                overlay.classList.remove("modal-overlay-show");
+        });
+        map.addEventListener("click", function(event) {
+                event.preventDefault();
+                map_popup.classList.add("modal-map-show");
+                overlay.classList.add("modal-overlay-show");
+         });
+        mapClose.addEventListener("click", function(event) {
+                event.preventDefault();
+                map_popup.classList.remove("modal-map-show");
+                overlay.classList.remove("modal-overlay-show");
+        });
+    </script>
+
+</body>
+</html>
